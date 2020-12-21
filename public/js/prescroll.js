@@ -10,13 +10,15 @@ window.addEventListener('load', function (){
         //userinput = document.getElementById("userinput")
 
         var Url = this.elements["URL"].value;
+        var path = new URL("Https://" + String(Url));
+        var Tpath = path.pathname
 
-        console.log(Url);
+        console.log(Tpath);
 
-        if(Url){
-            this.action = Url;
+        if(Tpath){
+            this.action = Tpath;
             this.submit();
-        }
+        }        
 
     })
 },false);

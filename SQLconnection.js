@@ -5,9 +5,9 @@ const mysql = require('mysql');
 DBconfig = {
 
     host: "localhost",
-    user: "root",
+    user: "ubuntu",
     password: "Mm0925219354*",
-    //port: 3306,
+    
     database: 'LYD_Exrates'
   }
 

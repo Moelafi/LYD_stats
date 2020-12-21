@@ -20,14 +20,14 @@ app.listen(3000, ()=>{
 
 app.get('/',(req,res)=>{
     const output = ''
-    console.log(output.length)
+    console.log(req.url);
     res.render('index',{output});
 })
 
 //localhost:3000/LYD/:base/:Date
 app.get('/LYD/:base/:Date', (req,res)=> {
      
-
+	console.log(req.url);
     var currency = req.params.base;
     var date = req.params.Date;
     var ValidationCode = paramvalidate.validateCurrencyAndDate(currency, date)
