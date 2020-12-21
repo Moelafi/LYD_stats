@@ -33,12 +33,14 @@ app.get('/LYD/:base/:Date', (req,res)=> {
     var ValidationCode = paramvalidate.validateCurrencyAndDate(currency, date)
 
     if (ValidationCode == '2') {
-        Answer = responses.currencynotin
-        res.status(400).send(Answer)}
+        output = responses.currencynotin
+        sitechecker(req,res,output);}
+        //res.status(400).send(Answer)}
 
     else if (ValidationCode == '3'){
-        Answer = responses.notaDate
-        res.status(400).send(Answer)}
+        output = responses.notaDate
+        sitechecker(req,res,output);}
+        //res.status(400).send(Answer)}
     
     else{
     var query = query_management.queryconstruct(currency, date);
