@@ -28,7 +28,7 @@ app.get('/',(req,res)=>{
 app.get('/LYD/:base/:Date', (req,res)=> {
      
 	console.log(req.url);
-    var currency = req.params.base;
+    var currency = req.params.base.toUpperCase();
     var date = req.params.Date;
     var ValidationCode = paramvalidate.validateCurrencyAndDate(currency, date)
 
