@@ -3,7 +3,7 @@
 window.addEventListener('load', function (){
 
     var form = document.getElementById("target2");
-    console.log(form);
+    //console.log(form);
 
     form.addEventListener("submit",function(){
 
