@@ -21,7 +21,7 @@ app.listen(3000, ()=>{
 
 app.get('/',(req,res)=>{
     const output = ''
-    console.log(req.url);
+    //console.log(req.url);
     res.render('index',{output});
 })
 
