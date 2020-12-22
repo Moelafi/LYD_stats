@@ -13,9 +13,7 @@ const con = SQLconnection.con;
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
-app.use(helmet({
-    contentSecurityPolicy: false,
-  }));
+
 
 app.listen(3000, ()=>{
     console.log('yo server running on port 3000');
