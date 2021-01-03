@@ -79,7 +79,7 @@ def creatforexDF(array):
 #a function which connects to our SQL DB and returns the connection object.
 def SQLconnect():
     
-    config = {"user":'root', "password":'Mm0925219354*',
+    config = {"user":'ubuntu', "password":'Mm0925219354*',
                                  "host":'localhost',
                                  "database":'LYD_Exrates'
     }
