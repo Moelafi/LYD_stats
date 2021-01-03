@@ -42,7 +42,8 @@ var JSONConstruct = (currency,date,Data)=>{
     output.Price_Date = date;
     output.Buy = Data.Buy;
     output.Sell = Data.Sell;
-    if(currency == 'USD'){output.USD_After_Tax = Data.TaxUSD}; //This statement adds a TaxUSD property which is only available for USDLYD
+    //if(currency == 'USD'){
+        //output.USD_After_Tax = Data.TaxUSD}; //This statement adds a TaxUSD property which is only available for USDLYD NOTE: REMOVED THIS THING BECAUSE IT NO LONGER EXISTS AFTER JAN 3RD.
     output.Request_DateTime = new Date();
 
     return(output)

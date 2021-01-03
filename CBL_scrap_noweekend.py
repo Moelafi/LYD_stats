@@ -171,7 +171,7 @@ if __name__ == "__main__":
                 
             if CUR == "USD":
                     
-                Taxed_USD = str(float(SELL) * 2.63)
+                Taxed_USD = 0 #changed this variable because i dont want to use it anymore after jan 3rd and still want to keepe it inserting in the DB.
                 Insert_Query = f"insert into {destination} (Price_Date,Buy,Sell,TaxUSD) values ('{PriceDate}',{Buy},{Sell},{Taxed_USD})"
                     
             print(Insert_Query)
